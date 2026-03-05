@@ -13,21 +13,21 @@ const Navbar = () => {
 
   const links = (
     <div
-      className={`flex md:hidden bg-blue-700 rounded-2xl absolute ml-7 p-5 leading-8 duration-700 ${open ? "mt-36" : "-mt-64"} flex-col font-medium`}
+      className={`flex md:hidden bg-green-700 rounded-2xl absolute ml-7 p-5 leading-8 duration-700 ${open ? "mt-36" : "-mt-64"} flex-col font-medium`}
     >
       {/* tap */}
       <ul>
-        <li className="hover:bg-blue-500 px-2.5">
+        <li className="hover:bg-blue-500 px-2.5 rounded-lg">
           <NavLink to="/">Home</NavLink>
         </li>
-        <li className="hover:bg-blue-500 px-2.5">
+        <li className="hover:bg-blue-500 px-2.5 rounded-lg">
           <NavLink to="/booking">My-Bookings</NavLink>
         </li>
-        <li className="hover:bg-blue-500 px-2.5">
+        <li className="hover:bg-blue-500 px-2.5 rounded-lg">
           {" "}
           <NavLink to="/blog">Blogs</NavLink>
         </li>
-        <li className="hover:bg-blue-500 px-2.5">
+        <li className="hover:bg-blue-500 px-2.5 rounded-lg">
           {" "}
           <NavLink to="/contact">Contact Us</NavLink>
         </li>
@@ -35,7 +35,7 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div className="flex justify-between items-center p-5 bg-amber-800">
+    <div className="flex justify-between items-center p-5 text-black">
       <span onClick={handelMenu} className="md:hidden">
         {open ? <IoClose size={28} /> : <GiHamburgerMenu size={26} />}{" "}
       </span>
