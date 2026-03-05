@@ -6,9 +6,9 @@ import DaisyNav from "../../Components/Header/DaisyNav";
 
 const Root = () => {
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="md:w-11/12 mx-auto">
       <Navbar></Navbar>
-      <DaisyNav></DaisyNav>
+      {/* <DaisyNav></DaisyNav> */}
       <Outlet></Outlet>
       <Footer></Footer>
     </div>
