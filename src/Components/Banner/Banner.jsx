@@ -3,7 +3,7 @@ import banner from "../../assets/banner-img-1.png";
 import banner2 from "../../assets/banner2.png";
 const Banner = () => {
   return (
-    <div className=" p-14 border-2 border-white bg-white rounded-3xl text-black">
+    <div className=" p-14 border-2 border-white bg-gray-100 rounded-3xl text-black">
       <h2 className="text-5xl font-bold text-center p-2">
         Dependable Care, Backed by Trusted Professionals.
       </h2>
@@ -19,7 +19,7 @@ const Banner = () => {
           type="text"
           placeholder="search any doctor "
         />
-        <button className="btn bg-green-700 m-1">search now</button>
+        <button className="btn bg-green-500 m-1">search now</button>
       </div>
 
       <div className="md:flex gap-2 leading-2 mt-6">

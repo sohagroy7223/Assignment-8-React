@@ -1,5 +1,4 @@
-{
-  "doctors": [
+ [
     {
       "id": 1,
       "image": "https://randomuser.me/api/portraits/men/11.jpg",
@@ -157,4 +156,3 @@
       "availability": ["Saturday", "Tuesday", "Thursday"]
     }
   ]
-}
