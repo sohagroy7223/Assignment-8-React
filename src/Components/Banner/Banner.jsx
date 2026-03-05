@@ -4,7 +4,7 @@ import banner2 from "../../assets/banner2.png";
 const Banner = () => {
   return (
     <div className=" p-14 border-2 border-white bg-white rounded-3xl text-black">
-      <h2 className="text-5xl font-bold text-center p-6">
+      <h2 className="text-5xl font-bold text-center p-2">
         Dependable Care, Backed by Trusted Professionals.
       </h2>
       <p className="text-center w-9/12 mx-auto">
