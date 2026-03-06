@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png";
 import { NavLink } from "react-router";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import "./nav.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   };
 
   const links = (
-    <div
+    <nav
       className={`flex md:hidden bg-green-500 rounded-2xl absolute ml-7 p-5 leading-8 duration-700 ${open ? "mt-36" : "-mt-64"} flex-col font-medium`}
     >
       {/* tap */}
@@ -32,10 +33,10 @@ const Navbar = () => {
           <NavLink to="/contact">Contact Us</NavLink>
         </li>
       </ul>
-    </div>
+    </nav>
   );
   return (
-    <div className="flex justify-between items-center p-5 text-black">
+    <nav className="flex justify-between items-center p-5 text-black">
       <span onClick={handelMenu} className="md:hidden">
         {open ? <IoClose size={28} /> : <GiHamburgerMenu size={26} />}{" "}
       </span>
@@ -57,7 +58,7 @@ const Navbar = () => {
         <NavLink to="/contact">Contact Us</NavLink>
       </div>
       <button className="btn bg-green-500">Emergency</button>
-    </div>
+    </nav>
   );
 };
 

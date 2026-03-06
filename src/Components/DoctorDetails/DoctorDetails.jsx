@@ -25,8 +25,8 @@ const DoctorDetails = () => {
           turpis imperdiet mattis donec dignissim volutpat.
         </p>
       </div>
-      <div className=" flex  gap-4 mt-4 bg-white p-8 rounded-2xl">
-        <img className="w-96 rounded-2xl" src={image} alt="" />
+      <div className=" md:flex  w-full mx-auto  gap-4 mt-4 bg-white p-8 rounded-2xl">
+        <img className="md:w-96 w-full rounded-2xl" src={image} alt="" />
         <div>
           <p className="text-4xl font-bold">{name}</p>
           <p className="mt-4 text-gray-500 font-medium">{education}</p>

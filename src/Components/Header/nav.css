@@ -1,0 +1,4 @@
+nav .active {
+  border-bottom: 4px solid green;
+  transition-duration: 800ms;
+}
