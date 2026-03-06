@@ -12,7 +12,7 @@ const Main = () => {
         checkup or urgent consultation, book appointments in minutes and receive
         quality care you can trust.
       </p>
-      <Suspense>
+      <Suspense fallback={<span>Loading...</span>}>
         <Doctors doctorsPromise={doctorsPromise}> </Doctors>
       </Suspense>
     </div>
