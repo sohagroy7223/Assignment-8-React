@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Doctor = ({ doctor }) => {
-  const { image, experience, name, education, registrationNumber } = doctor;
+  // console.log(doctor);
+  const { image, id, experience, name, education, registrationNumber } = doctor;
   return (
-    <div className="border p-3 bg-white flex-1">
+    <div className="border p-3 bg-white flex-1 rounded-2xl">
       <img className="w-80 mx-auto rounded-2xl" src={image} alt="" />
       <div className="flex items-center gap-3 mt-3">
         <p className="bg-green-200 text-green-700 rounded-3xl p-2">Available</p>
@@ -18,9 +20,11 @@ const Doctor = ({ doctor }) => {
         <span className="border p-1 rounded-full font-medium">R</span> Reg No:{" "}
         {registrationNumber}
       </p>
-      <button className="btn btn-block bg-white text-blue-600 font-medium mt-3 rounded-4xl text-xl">
-        View Details
-      </button>
+      <Link to={`/DoctorDetails/${id}`}>
+        <button className="btn btn-block bg-white text-blue-600 font-medium mt-3 rounded-4xl text-xl">
+          View Details
+        </button>
+      </Link>
     </div>
   );
 };

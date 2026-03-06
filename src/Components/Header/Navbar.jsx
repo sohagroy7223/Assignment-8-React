@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const links = (
     <div
-      className={`flex md:hidden bg-green-700 rounded-2xl absolute ml-7 p-5 leading-8 duration-700 ${open ? "mt-36" : "-mt-64"} flex-col font-medium`}
+      className={`flex md:hidden bg-green-500 rounded-2xl absolute ml-7 p-5 leading-8 duration-700 ${open ? "mt-36" : "-mt-64"} flex-col font-medium`}
     >
       {/* tap */}
       <ul>
