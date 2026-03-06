@@ -22,4 +22,4 @@ const addDoctorToLd = (id) => {
   }
 };
 
-export { addDoctorToLd };
+export { addDoctorToLd, getDoctorFromLs };

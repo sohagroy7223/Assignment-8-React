@@ -1,6 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
-import { addDoctorToLd } from "../../Utilitys/addToLocalS";
+import { addDoctorToLd } from "../../Utility/addToLocalS";
 
 const DoctorDetails = () => {
   const data = useLoaderData();
