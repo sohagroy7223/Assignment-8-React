@@ -1,16 +1,16 @@
- [
+ [ 
     {
-      "id": 1,
-      "image": "https://randomuser.me/api/portraits/men/11.jpg",
-      "name": "Dr. John Smith",
-      "education": "MBBS, MD (Cardiology)",
-      "speciality": "Cardiologist",
+     "id": 1,
+      "image": "https://randomuser.me/api/portraits/women/86.jpg",
+      "name": "Dr. Nusrat Jahan",
+      "education": "MBBS, FCPS (Medicine)",
+      "speciality": "Internal Medicine Specialist",
       "designation": "Senior Consultant",
-      "workplace": "Dhaka Medical College Hospital",
-      "experience": "12 Years",
-      "registrationNumber": "BMDC-45879",
-      "fee": 800,
-      "availability": ["Sunday", "Monday", "Wednesday"]
+      "workplace": "Green Life Medical College Hospital",
+      "experience": "11 Years",
+      "registrationNumber": "BMDC-44569",
+      "fee": 750,
+      "availability": ["Saturday", "Tuesday", "Thursday"]
     },
     {
       "id": 2,
@@ -143,16 +143,16 @@
       "availability": ["Sunday", "Wednesday", "Friday"]
     },
     {
-      "id": 12,
-      "image": "https://randomuser.me/api/portraits/women/86.jpg",
-      "name": "Dr. Nusrat Jahan",
-      "education": "MBBS, FCPS (Medicine)",
-      "speciality": "Internal Medicine Specialist",
+     "id": 12,
+      "image": "https://randomuser.me/api/portraits/men/11.jpg",
+      "name": "Dr. John Smith",
+      "education": "MBBS, MD (Cardiology)",
+      "speciality": "Cardiologist",
       "designation": "Senior Consultant",
-      "workplace": "Green Life Medical College Hospital",
-      "experience": "11 Years",
-      "registrationNumber": "BMDC-44569",
-      "fee": 750,
-      "availability": ["Saturday", "Tuesday", "Thursday"]
+      "workplace": "Dhaka Medical College Hospital",
+      "experience": "12 Years",
+      "registrationNumber": "BMDC-45879",
+      "fee": 800,
+      "availability": ["Sunday", "Monday", "Wednesday"]
     }
   ]

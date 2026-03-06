@@ -76,7 +76,7 @@ const DoctorDetails = () => {
         </p>
         <button
           onClick={() => addDoctorToLd(id)}
-          className="btn btn-block mt-5  bg-green-600"
+          className="btn btn-block mt-5 bg-green-600"
         >
           Book Appointment Now
         </button>
