@@ -74,6 +74,7 @@ const DoctorDetails = () => {
             today only. We appreciate your understanding and cooperation.
           </small>
         </p>
+
         <button
           onClick={() => addDoctorToLd(id)}
           className="btn btn-block mt-5 bg-green-600"
