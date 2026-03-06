@@ -7,9 +7,9 @@ const getDoctorFromLs = () => {
   return [];
 };
 
-const saveDoctorToLS = (doc) => {
-  const docStringify = JSON.stringify(doc);
-  localStorage.setItem("doctor", docStringify);
+const saveDocToLs = (doc) => {
+  const data = JSON.stringify(doc);
+  localStorage.setItem("doctor", data);
 };
 
 const addDoctorToLd = (id) => {
@@ -17,7 +17,8 @@ const addDoctorToLd = (id) => {
   if (doctor.includes(id)) {
     alert("already book this Doctor");
   } else {
-    saveDoctorToLS(doctor.push(id));
+    doctor.push(id);
+    saveDocToLs(doctor);
   }
 };
 

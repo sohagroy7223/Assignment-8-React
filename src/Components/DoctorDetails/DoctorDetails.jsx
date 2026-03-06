@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
+import { addDoctorToLd } from "../../Utilitys/addToLocalS";
 
 const DoctorDetails = () => {
   const data = useLoaderData();
@@ -45,8 +46,8 @@ const DoctorDetails = () => {
           <p className="border border-dashed text-gray-400 w-full mt-4"></p>
           <h4 className="flex gap-2.5 mt-4">
             <span className="text-lg font-bold">Available : </span>{" "}
-            {availability.map((available) => (
-              <p className="border p-1 rounded-2xl bg-amber-100 ">
+            {availability.map((available, index) => (
+              <p key={index} className="border p-1 rounded-2xl bg-amber-100 ">
                 {available}
               </p>
             ))}
@@ -73,7 +74,10 @@ const DoctorDetails = () => {
             today only. We appreciate your understanding and cooperation.
           </small>
         </p>
-        <button className="btn btn-block mt-5  bg-green-600">
+        <button
+          onClick={() => addDoctorToLd(id)}
+          className="btn btn-block mt-5  bg-green-600"
+        >
           Book Appointment Now
         </button>
       </div>
