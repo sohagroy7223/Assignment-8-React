@@ -8,7 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-52 bg-white p-5">
+    <footer className="w-full bg-white p-10 mt-20">
       <div className="flex items-center gap-2 justify-center mx-auto p-5">
         <img src={logo} alt="" />
         <h3 className="text-3xl font-bold">Phudu</h3>
@@ -21,7 +21,7 @@ const Footer = () => {
         <Link to="/contact">Contact Us</Link>
       </div>
       <p className="border border-dashed text-gray-400 mt-4"></p>
-      <div className="flex gap-4 mt-4 justify-center">
+      <div className="flex gap-4 mt-4 justify-center ">
         <Link to="https://www.facebook.com/sohag.roy.283426">
           <FaFacebook size={30} />
         </Link>

@@ -18,17 +18,17 @@ const Navbar = () => {
     >
       {/* tap */}
       <ul>
-        <li className="hover:bg-blue-500 px-2.5 rounded-lg">
+        <li className=" px-2.5 rounded-lg">
           <NavLink to="/">Home</NavLink>
         </li>
-        <li className="hover:bg-blue-500 px-2.5 rounded-lg">
+        <li className=" px-2.5 rounded-lg">
           <NavLink to="/booking">My-Bookings</NavLink>
         </li>
-        <li className="hover:bg-blue-500 px-2.5 rounded-lg">
+        <li className=" px-2.5 rounded-lg">
           {" "}
           <NavLink to="/blog">Blogs</NavLink>
         </li>
-        <li className="hover:bg-blue-500 px-2.5 rounded-lg">
+        <li className=" px-2.5 rounded-lg">
           {" "}
           <NavLink to="/contact">Contact Us</NavLink>
         </li>
