@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router";
-import { getDoctorFromLs } from "../../Utility/addToLocalS";
+import { getDoctorFromLs, removeDocFromLs } from "../../Utility/addToLocalS";
 import BookDoctors from "../BookDoctors/BookDoctors";
 
 const Booking = () => {
   const [booking, setBooking] = useState([]);
 
   const data = useLoaderData();
+
+  const cancelBooking = (id) => {
+    // console.log("cancel", id);
+    const remainingDoctor = booking.filter((doctor) => doctor.id !== id);
+    setBooking(remainingDoctor);
+    removeDocFromLs(id);
+  };
 
   useEffect(() => {
     const storeDoctorId = getDoctorFromLs();
@@ -42,7 +49,11 @@ const Booking = () => {
           various specialties — all at your convenience.
         </p>
         {booking.map((doctor) => (
-          <BookDoctors doctor={doctor}></BookDoctors>
+          <BookDoctors
+            key={doctor.id}
+            cancelBooking={cancelBooking}
+            doctor={doctor}
+          ></BookDoctors>
         ))}
       </div>
     </div>

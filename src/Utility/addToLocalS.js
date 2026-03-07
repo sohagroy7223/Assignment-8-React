@@ -22,4 +22,12 @@ const addDoctorToLd = (id) => {
   }
 };
 
-export { addDoctorToLd, getDoctorFromLs };
+const removeDocFromLs = (id) => {
+  const storedDoctor = getDoctorFromLs();
+  const remainingDoc = storedDoctor.filter(
+    (doctorId) => parseInt(doctorId) !== id,
+  );
+  saveDocToLs(remainingDoc);
+};
+
+export { addDoctorToLd, getDoctorFromLs, removeDocFromLs };
