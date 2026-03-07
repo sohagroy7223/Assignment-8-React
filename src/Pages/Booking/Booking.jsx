@@ -3,7 +3,7 @@ import { Link, useLoaderData } from "react-router";
 import { getDoctorFromLs, removeDocFromLs } from "../../Utility/addToLocalS";
 import BookDoctors from "../BookDoctors/BookDoctors";
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import ShowChart from "../ShowChart/ShowChart";
 
 const Booking = () => {
   const [booking, setBooking] = useState([]);
@@ -20,14 +20,16 @@ const Booking = () => {
   useEffect(() => {
     const storeDoctorId = getDoctorFromLs();
     const converted = storeDoctorId.map((id) => parseInt(id));
-    // console.log(converted);
+
     const booking = data.filter((doctor) => converted.includes(doctor.id));
+
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setBooking(booking);
   }, [data]);
 
   return (
     <div>
+      {booking.length > 0 && <ShowChart doctors={booking} />}
       <ToastContainer />
       <div className={`p-3 w-full ${booking.length > 0 && "hidden"}`}>
         <h3 className="text-3xl font-bold text-center mt-5">
