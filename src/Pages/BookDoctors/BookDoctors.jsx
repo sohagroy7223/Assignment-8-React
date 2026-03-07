@@ -1,5 +1,4 @@
 import React from "react";
-
 const BookDoctors = ({ doctor }) => {
   const { name, education, fee } = doctor;
   return (

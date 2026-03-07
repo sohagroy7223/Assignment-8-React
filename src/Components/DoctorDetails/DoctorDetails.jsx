@@ -1,12 +1,18 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useNavigate, useParams } from "react-router";
 import { addDoctorToLd } from "../../Utility/addToLocalS";
+import { ToastContainer, toast } from "react-toastify";
 
 const DoctorDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
+
   const doctorId = parseInt(id);
+
   const singleDoc = data.find((doctor) => doctor.id === doctorId);
+
+  const navigate = useNavigate();
+
   const {
     image,
     name,
@@ -16,6 +22,8 @@ const DoctorDetails = () => {
     availability,
     fee,
   } = singleDoc;
+  const notify = () => toast(`Appointment ${name} Booked Successfully!`);
+
   return (
     <div className="md:w-11/12 mx-auto shadow-2xl text-black">
       <div className="bg-white text-center rounded-2xl p-5">
@@ -74,9 +82,15 @@ const DoctorDetails = () => {
             today only. We appreciate your understanding and cooperation.
           </small>
         </p>
-
+        <ToastContainer />
         <button
-          onClick={() => addDoctorToLd(id)}
+          onClick={() => {
+            addDoctorToLd(id);
+            notify();
+            setTimeout(() => {
+              navigate("/booking");
+            }, 3000);
+          }}
           className="btn btn-block mt-5 bg-green-600"
         >
           Book Appointment Now
