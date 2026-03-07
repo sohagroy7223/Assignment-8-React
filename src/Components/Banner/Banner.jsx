@@ -4,7 +4,7 @@ import banner2 from "../../assets/banner2.png";
 const Banner = () => {
   return (
     <div className=" p-14 border-2 border-white bg-gray-100 rounded-3xl text-black">
-      <h2 className="text-5xl font-bold text-center p-2">
+      <h2 className="lg:text-5xl text-3xl font-bold text-center p-2">
         Dependable Care, Backed by Trusted Professionals.
       </h2>
       <p className="text-center w-9/12 mx-auto">
@@ -15,7 +15,7 @@ const Banner = () => {
       </p>
       <div className="text-center mt-4 ">
         <input
-          className="border w-72 mr-3 rounded-2xl py-2 px-5"
+          className="border lg:w-72 mr-3 rounded-2xl py-2 px-5"
           type="text"
           placeholder="search any doctor "
         />

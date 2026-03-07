@@ -17,30 +17,30 @@ const Services = () => {
         various specialties — all at your convenience.{" "}
       </p>
       <div className=" grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
-        <div className="w-full mx-auto bg-white p-10 flex flex-col justify-center rounded-2xl ">
+        <div className="w-full mx-auto bg-white lg:p-10 p-5 flex flex-col justify-center rounded-2xl ">
           <img className="w-11 " src={success} alt="" />
-          <h3 className="text-5xl mt-2 mb-1 font-bold">
+          <h3 className="lg:text-5xl text-4xl mt-2 mb-1 font-bold">
             {hover && <CountUp end={199} duration={10}></CountUp>}+
           </h3>
           <p>Total Doctors</p>
         </div>
-        <div className="w-full mx-auto bg-white p-10 flex flex-col justify-center rounded-2xl ">
+        <div className="w-full mx-auto bg-white lg:p-10 p-5 flex flex-col justify-center rounded-2xl ">
           <img className="w-11 " src={success1} alt="" />
-          <h3 className="text-5xl mt-2 mb-1 font-bold">
+          <h3 className="lg:text-5xl text-4xl mt-2 mb-1 font-bold">
             {hover && <CountUp end={467} duration={10}></CountUp>}+
           </h3>
           <p>Total Reviews</p>
         </div>
-        <div className="w-full mx-auto bg-white p-10 flex flex-col justify-center rounded-2xl ">
+        <div className="w-full mx-auto bg-white lg:p-10 p-5 flex flex-col justify-center rounded-2xl ">
           <img className="w-11 " src={success3} alt="" />
-          <h3 className="text-5xl mt-2 mb-1 font-bold">
+          <h3 className="lg:text-5xl text-4xl mt-2 mb-1 font-bold">
             {hover && <CountUp end={1900} duration={10}></CountUp>}+
           </h3>
           <p>Patients</p>
         </div>
-        <div className="w-full mx-auto bg-white p-10 flex flex-col justify-center rounded-2xl ">
+        <div className="w-full mx-auto bg-white lg:p-10 p-5 flex flex-col justify-center rounded-2xl ">
           <img className="w-11  " src={success4} alt="" />
-          <h3 className="text-5xl mt-2 mb-1 font-bold">
+          <h3 className="lg:text-5xl text-4xl mt-2 mb-1 font-bold">
             {hover && <CountUp end={300} duration={10}></CountUp>}+
           </h3>
           <p>Total Stuffs</p>

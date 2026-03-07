@@ -55,7 +55,10 @@ const DoctorDetails = () => {
           <h4 className="flex gap-2.5 mt-4">
             <span className="text-lg font-bold">Available : </span>{" "}
             {availability.map((available, index) => (
-              <p key={index} className="border p-1 rounded-2xl bg-amber-100 ">
+              <p
+                key={index}
+                className="md:border p-1 md:rounded-2xl md:bg-amber-100 "
+              >
                 {available}
               </p>
             ))}
@@ -69,8 +72,8 @@ const DoctorDetails = () => {
         <h2 className="text-2xl text-center font-bold">Book an Appointment</h2>
         <p className="border border-dashed text-gray-400 w-full mt-4"></p>
         <div className="flex justify-between px-6 mt-3.5">
-          <h4 className="text-lg font-bold">Availability</h4>
-          <h4 className="border p-1 rounded-2xl  bg-amber-50">
+          <h4 className="text-lg font-bold">Availability: </h4>
+          <h4 className="md:border p-1 md:rounded-2xl  md:bg-amber-50">
             Doctor Available Today
           </h4>
         </div>
