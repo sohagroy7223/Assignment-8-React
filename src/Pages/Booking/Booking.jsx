@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router";
 import { getDoctorFromLs, removeDocFromLs } from "../../Utility/addToLocalS";
 import BookDoctors from "../BookDoctors/BookDoctors";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Booking = () => {
   const [booking, setBooking] = useState([]);
@@ -26,6 +28,7 @@ const Booking = () => {
 
   return (
     <div>
+      <ToastContainer />
       <div className={`p-3 w-full ${booking.length > 0 && "hidden"}`}>
         <h3 className="text-3xl font-bold text-center mt-5">
           you have not Booked any Appointment yet
