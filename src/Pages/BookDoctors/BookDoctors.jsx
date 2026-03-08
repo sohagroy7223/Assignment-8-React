@@ -18,7 +18,7 @@ const BookDoctors = ({ doctor, cancelBooking }) => {
           notify();
           cancelBooking(doctor.id);
         }}
-        className="btn btn-block rounded-4xl text-amber-700 text-xl mt-5 bg-white border-3 border-amber-700"
+        className="btn btn-block rounded-4xl hover:bg-amber-700 hover:text-white text-amber-700 text-xl mt-5 bg-white border-3 border-amber-700"
       >
         Cancel Appointment
       </button>
